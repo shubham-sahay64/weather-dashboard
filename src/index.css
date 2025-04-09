@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  @apply min-h-screen bg-gradient-to-br from-blue-300 to-indigo-500 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center p-4;
+}
+
+.toggle {
+  @apply absolute top-4 right-4;
+}
+
+.toggle-btn {
+  @apply bg-white dark:bg-black text-black dark:text-white border px-4 py-1 rounded-full shadow hover:scale-105 transition;
+}
+
+.card {
+  @apply bg-white dark:bg-gray-900 text-black dark:text-white rounded-2xl shadow-xl p-8 w-full max-w-md space-y-6;
+}
+
+.search {
+  @apply flex;
+}
+
+.input {
+  @apply flex-grow p-3 border border-gray-300 dark:border-gray-700 rounded-l-xl bg-white dark:bg-gray-800 text-lg dark:text-white;
+}
+
+.search-btn {
+  @apply bg-indigo-600 text-white px-6 py-3 rounded-r-xl hover:bg-indigo-700;
+}
+
+.title {
+  @apply font-semibold mb-2;
+}
+
+.tags {
+  @apply flex flex-wrap gap-2;
+}
+
+.tag {
+  @apply px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 text-sm;
+}
+
+.loading {
+  @apply text-center text-gray-700 dark:text-gray-300;
+}
+
+.spinner {
+  @apply w-6 h-6 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mx-auto mt-4;
+}
+
+.error {
+  @apply text-red-600 text-center;
+}
+
+.weather {
+  @apply text-center space-y-2;
+}
+
+.weather-header {
+  @apply flex justify-between items-center;
+}
+
+.refresh {
+  @apply text-sm text-blue-600 hover:underline;
+}
+
+.weather-icon {
+  @apply mx-auto;
+}
+
+.temp {
+  @apply text-2xl;
+}
+
+.feels {
+  @apply text-sm;
+}
+
+.desc {
+  @apply capitalize text-lg;
+}
+
+.info {
+  @apply text-sm;
+}
+
+.forecast {
+  @apply pt-4 border-t border-gray-300 dark:border-gray-600;
+}
+
+.forecast-grid {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.forecast-item {
+  @apply bg-gray-100 dark:bg-gray-700 rounded-lg p-2 text-center;
+}
+
+.forecast-icon {
+  @apply mx-auto w-12 h-12;
+}
